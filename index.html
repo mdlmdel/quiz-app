@@ -4,19 +4,48 @@
   <title>Music Quiz</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
+  <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body class="container">
+<main>
   <h1>Quiz</h1>
   <!-- Welcome screen --> 
   <div id="welcome">
-    <h2>Welcome to music trivia</h2>
-    <button id="start">Get started now!</button>
+    <h2>Music Trivia</h2>
+    <p>The place to test your knowledge of pop music</p>
+    <button id="start">Start now!</button>
   </div>
+  <!-- Questions screen -->
+  <div id="quizquestion">
+    <h4><span class="question-name"></span>
+    </h4>
+  <!-- Current question with answer choices and submit button. -->
   <form id="questions">
-      <button type="submit">Submit</button>
+      <ul class="answers">
+        <label name="answers"></label>
+        <li class="choices"><input type="radio" name="radios" id="0" value="0"></li>
+        <li class="choices"><input type="radio" name="radios" id="1" value="1"></li>
+        <li class="choices"><input type="radio" name="radios" id="2" value="2"></li>
+        <li class="choices"><input type="radio" name="radios id="3" value="3"></li>
+      </ul>
+      <button type="submit" id="submit">Submit</button>
+      <button type="button" id="next">Next ></button>
+      <button type="reset" id="reset">Restart quiz</button>
   </form>
+      
+  </div>
+  <div id="answer-feedback">
+    <span class="correct">
+        
+      </span>
+      <span class="incorrect">
+        
+      </span>
+  </div>
+  <!-- Score on quiz. -->
   <div id="results">
     
   </div>
+  </main>
 </body>
 </html>
