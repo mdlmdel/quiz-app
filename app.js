@@ -73,16 +73,17 @@ $(document).ready(function () {
       "Incorrect",
       "Nope" 
     ]
+
   // Check whether submitted answer is correct
-  // Below, currentQuestion and "correct" are just numbers.
+  // Below, currentQuestion and "correct" are numbers.
   function checkAnswer (userAnswer, currentQuestion) {
-     if ( userAnswer == quiz[currentQuestion].correct ) {
+     if ( userAnswer == quiz[currentQuestion].correct[num] ) {
         // Show correctMessage
-        // Fix rest of this later.
-        document.write(correctMessage);
+        // Fix rest of this later. --> switched document.write to return
+        return $('#answer-feedback').text(correctMessage[num]);
      } else {
         // Show incorrectMessage
-        document.write(incorrectMessage);
+        return $('#answer-feedback').text(incorrectMessage[num]);
      }
 }
 
@@ -97,12 +98,23 @@ $(document).ready(function () {
   var displayQuestion = function (num) {
     $('.question-name').text(quiz[num].question);
   }
-  // Display the answers in similar way
+  // Display the correct or incorrect answer
+  var displayAnswer = function (num) {
+    $('.answers').text(quiz[num].answers);
+    console.log(quiz[num].answers);
+  }
+
+  var displayMessage = function (num) {
+    $('#answer-feedback').text(correctMessage || incorrectMessage);
+  }
 
   // Advance to the next question from the correctMessage / incorrectMessage screen
-  
+  var nextQuestion = function (num) {
+    $('.question-name').text(quiz[num++].question);
+    for (quiz[num].question = 0; quiz[num].question <= quiz.length; quiz[num++].question++);
+  }
   // RENDER PAGE FUNCTION
-  var renderPage = function(question, answer) {
+/*  var renderPage = function (question, answer) {
       var quizHTML = question.answer.map(function(answer, correct, index) {
           var html = "";
           html += '<div class="answer-feedback">' + '<li data-index="' + index +'">'
@@ -116,7 +128,22 @@ $(document).ready(function () {
       });
       element.html(quizHTML);
   };
-
+*/
+  // RENDER ANSWERS AS RADIO BUTTON ELEMENTS
+  var renderAnswers = function (answers, question) {
+    var answersHTML = text(quiz[num].answers);
+      var html = "";
+      html += currentQuestion.quiz[num].answers[num].map(function(answers, correct, num) {
+        return (
+          '<li>' + 
+            '<input class="choices" type="radio" name="radios" value=" + num + " required>' + 
+            '<label>' + answers[num] + '</label>' + 
+          '</li>'
+          )
+      })
+      element.html(answers);
+  };
+  
   // SELECTORS
   // Select what we don't want to see on the welcome page: questions and results
   $('#questions').hide();
@@ -130,7 +157,9 @@ $('#start').click(function () {
     $('#next').hide();
     $('#reset').hide();
     $('#questions').show();
+    $('.answers').show(); // Added
     displayQuestion(currentQuestion);
+    displayAnswer(currentQuestion);
 })
 
 // On the submit button, when there is a click, run this function.
@@ -138,7 +167,17 @@ $('#submit').click(function (e) {
   // Without preventDefault, it refreshes the page. 
     e.preventDefault();
     $('#answer-feedback').show();
+    displayMessage(checkAnswer);
 
+})
+
+// Next question.
+$('#next').click(function (e) {
+  // Without preventDefault, it refreshes the page. 
+    e.preventDefault();
+    $('#answer-feedback').hide();
+    $('#questions').show();
+    nextQuestion(num); // Added
 })
 
 // On the "restart quiz" button, go back to the first question. 
