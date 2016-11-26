@@ -142,9 +142,13 @@ $(document).ready(function () {
           )
       })
       // Set the html to the variable declared on line 131 (html)
+      console.log(html);
       $('.answers').html(html);
   };
   
+  // Pass what was selected and the correct answer and compare them
+  // Also, create a global variable score
+
   // SELECTORS
   // Select what we don't want to see on the welcome page: questions and results
   $('#questions').hide();
@@ -167,11 +171,13 @@ $('#start').click(function () {
 $('#submit').click(function (e) {
   // Without preventDefault, it refreshes the page. 
     e.preventDefault();
+    // Below, the pseudo selected is checked
+    var selected = $('input[name=radios]:checked').val();
+    console.log(selected);
     $('#questions').hide();
     $('#quizquestion').hide();
     $('#answer-feedback').show();
-    $('#next').show(); // why is htis now showing
-    console.log('#next');
+    $('#next').show(); // Why is this not showing?
     displayMessage(checkAnswer);
 
 })
