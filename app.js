@@ -64,19 +64,21 @@ $(document).ready(function () {
     }
     ]
     // Message they receive on the screen if they selected the correct answer.
-    correctMessage: [
+    var correctMessage = [
       "Correct!",
       "Yes!"
     ]
     // Message they receive if their answer is incorrect. 
-    incorrectMessage: [
+    var incorrectMessage = [
       "Incorrect",
-      "Nope", 
+      "Nope" 
     ]
   // Check whether submitted answer is correct
-  function checkAnswer (userAnswer, quiz) {
-     if ( userAnswer == quiz[quiz.question].quiz.correct[ 0 ] ) {
+  // Below, currentQuestion and "correct" are just numbers.
+  function checkAnswer (userAnswer, currentQuestion) {
+     if ( userAnswer == quiz[currentQuestion].correct ) {
         // Show correctMessage
+        // Fix rest of this later.
         document.write(correctMessage);
      } else {
         // Show incorrectMessage
@@ -84,6 +86,21 @@ $(document).ready(function () {
      }
 }
 
+  // Total number of questions -- it's an array, so do quiz.length
+  var totalQuestions = quiz.length;
+
+  // Make sure only one question displays at a time
+  // Note: currentQuestion is a number.
+  var currentQuestion = 0;
+  
+  // Display the first question
+  var displayQuestion = function (num) {
+    $('.question-name').text(quiz[num].question);
+  }
+  // Display the answers in similar way
+
+  // Advance to the next question from the correctMessage / incorrectMessage screen
+  
   // RENDER PAGE FUNCTION
   var renderPage = function(question, answer) {
       var quizHTML = question.answer.map(function(answer, correct, index) {
@@ -111,38 +128,29 @@ $(document).ready(function () {
 $('#start').click(function () {
     $('#welcome').hide();
     $('#next').hide();
-    $('#reset').show();
+    $('#reset').hide();
     $('#questions').show();
+    displayQuestion(currentQuestion);
 })
 
 // On the submit button, when there is a click, run this function.
-$('#submit').click(function () {
-    $('#welcome').hide();
-    $('#questions').hide();
+$('#submit').click(function (e) {
+  // Without preventDefault, it refreshes the page. 
+    e.preventDefault();
     $('#answer-feedback').show();
+
 })
 
 // On the "restart quiz" button, go back to the first question. 
 $('#reset').click(function () {
-    $('#welcome').hide();
+    $('#welcome').show();
     $('#next').hide();
-    $('#reset').show();
-    $('#questions').show();
+    $('#reset').hide();
+    $('#questions').hide();
     console.log($('#reset'));
 })
   
+
 // Correct answer listener
-$(document).on('click', '#submit', function() { 
-    var quiz = parseInt($(this).question.correct.attr('data-index'));
-    checkAnswer(userAnswer, quiz);
-    $('#welcome').hide();
-    $('#questions').hide;
-    $('#answer-feedback').show();
-    renderPage(push, $(correctMessage)); 
-})
-/*    $(document).on('click', '#submit', function() { 
-    var quiz = parseInt($(this).parent().attr('data-index'));
-    checkAnswer(userAnswer, quiz);
-    renderPage(push, $(correctMessage)); 
- */   
+   
 });
