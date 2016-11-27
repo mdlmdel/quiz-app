@@ -53,6 +53,7 @@ button {
 button:hover {
   cursor: pointer;
   background: #076997;
+  border: 2px solid #076997;
 }
 
 #answers {

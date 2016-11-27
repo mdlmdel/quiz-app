@@ -74,21 +74,6 @@ $(document).ready(function () {
       "Nope" 
     ]
   
-  // Check the answer the user selects, and compare it to the correct answer.
-  // Check whether submitted answer is correct
-  // Below, currentQuestion and "correct" are numbers.
-/*  function checkAnswer (currentAnswer, currentQuestion) {
-     if ( currentAnswer == currentQuestion.correct ) {
-        // Show correctMessage
-        // Fix rest of this later. --> switched document.write to return
-        return $('#answer-feedback').text(correctMessage[num]);
-     } else {
-        // Show incorrectMessage
-        return $('#answer-feedback').text(incorrectMessage[num]);
-     }
-}
-*/
-
   // Total number of questions -- it's an array, so do quiz.length
   var totalQuestions = quiz.length;
 
@@ -113,35 +98,26 @@ $(document).ready(function () {
     $('.question-name').text(quiz[num].question);
   }
   
-  var displayMessage = function (num) {
-    $('#answer-feedback').text(correctMessage || incorrectMessage);
+  var displayMessage = function (message) {
+    $('#answer-feedback').text(message);
   }
+
+  // Pick a phrase on the correctMessage or incorrectMessage from the arrays
+  // 
+  function getRandomInt() {
+    return Math.floor(Math.random() * 2)
+}
+ 
 
   // Advance to the next question from the correctMessage / incorrectMessage screen
   var nextQuestion = function (currentQuestion) {
     $('.question-name').text(quiz[num++].question);
     for (quiz[num].question = 0; quiz[num].question <= quiz.length; quiz[num++].question++);
   }
-  // RENDER PAGE FUNCTION
-/*  var renderPage = function (question, answer) {
-      var quizHTML = question.answer.map(function(answer, correct, index) {
-          var html = "";
-          html += '<div class="answer-feedback">' + '<li data-index="' + index +'">'
-          if (answers.correct) {
-              html += '<span class="correct">' + correctMessage + '</span>'; 
-          } else {
-              html += '<span class="incorrect">' + incorrectMessage + '</span>'; 
-          }
-          html += '</div>' + '</li>';
-          return html;    
-      });
-      element.html(quizHTML);
-  };
-*/
+
   // RENDER ANSWERS AS RADIO BUTTON ELEMENTS
   // Which question am I on? Look at the numbered question handed to us.
   var displayAnswers = function (num) {
-    
       var html = "";
       // Display the answers for this same question reference above.
       // We're trying to run a function against every element of the answers array.
@@ -159,7 +135,14 @@ $(document).ready(function () {
       console.log(html);
       $('.answers').html(html);
   };
-  
+
+// Remove commas from displayAnswers --> Added
+  function removeCommas(displayAnswers) {
+    while (str.search(",") >= 0) {
+        str = (str + "").replace(',', '');
+    }
+    return str;
+};
   // Pass what was selected and the correct answer and compare them
   // Also, create a global variable score
 
@@ -168,15 +151,15 @@ $(document).ready(function () {
   $('#questions').hide();
   $('#results').hide();
   $('#answer-feedback').hide();
+  $('#next').hide();
 // EVENT LISTENERS
 // Submit button event listener
 // On the start button, when there is a click, run this function.
 $('#start').click(function () {
     $('#welcome').hide();
-    $('#next').hide();
     $('#reset').hide();
     $('#questions').show();
-    $('.answers').show(); // Added
+    $('.answers').show();
     displayQuestion(currentQuestion);
     displayAnswers(currentQuestion);
 })
@@ -187,24 +170,22 @@ $('#submit').click(function (e) {
     e.preventDefault();
     // Below, the pseudo selected is checked
     var selected = $('input[name=radios]:checked').val();
-    if ($('input[name=radios]:checked') == [currentQuestion].correct) {
-    return correctMessage;
-    score++;
-    totalScore;
+    if ($('input[name=radios]:checked').val() == quiz[currentQuestion].correct) {  
+      score++;
+      /* Note to remember: (currentQuestion + 1) --> Do + 1 to account for 
+      how math and arrays work; to account for how arrays work, increment as we go. */
+      // The return stops the code from running past that point in the block.
+      // return correctMessage;
+      displayMessage(correctMessage[getRandomInt()]);
     } 
     else {
-    score;
-    console.log($('input[name=radios]:checked'));
-    console.log($('input[name="radios"]:checked').val());
+    // score; --> Don't need this since it isn't doing anything here.
+      displayMessage(incorrectMessage[getRandomInt()]);
     }
-
-    console.log(selected);
     $('#questions').hide();
     $('#quizquestion').hide();
     $('#next').show();
     $('#answer-feedback').show();
-    displayMessage(score);
-
 })
 
 // Next question.
@@ -213,7 +194,16 @@ $('#next').click(function (e) {
     e.preventDefault();
     $('#answer-feedback').hide();
     $('#questions').show();
-    nextQuestion(num); // Added
+    $('#quizquestion').show();
+    $('#next').hide();
+    currentQuestion++; 
+    if (currentQuestion == quiz.length) {
+      // Show Results --> make callt o fucntion
+    }
+    else {
+      displayQuestion(currentQuestion);
+      displayAnswers(currentQuestion);
+    }
 })
 
 // On the "restart quiz" button, go back to the first question. 
