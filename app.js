@@ -214,8 +214,5 @@ $('#reset').click(function () {
     $('#questions').hide();
     console.log($('#reset'));
 })
-  
-
-// Correct answer listener
    
 });
