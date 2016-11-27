@@ -73,24 +73,7 @@ $(document).ready(function () {
       "Incorrect",
       "Nope" 
     ]
-<<<<<<< HEAD
   
-=======
-
-  // Check whether submitted answer is correct
-  // Below, currentQuestion and "correct" are numbers.
-  function checkAnswer (userAnswer, currentQuestion) {
-     if ( userAnswer == quiz[currentQuestion].correct[num] ) {
-        // Show correctMessage
-        // Fix rest of this later. --> switched document.write to return
-        return $('#answer-feedback').text(correctMessage[num]);
-     } else {
-        // Show incorrectMessage
-        return $('#answer-feedback').text(incorrectMessage[num]);
-     }
-}
-
->>>>>>> 61d700b5efbf0f4e907609e9bd20ab1c200d4d88
   // Total number of questions -- it's an array, so do quiz.length
   var totalQuestions = quiz.length;
 
@@ -114,7 +97,6 @@ $(document).ready(function () {
   var displayQuestion = function (num) {
     $('.question-name').text(quiz[num].question);
   }
-<<<<<<< HEAD
   
   var displayMessage = function (message) {
     $('#answer-feedback').text(message);
@@ -164,54 +146,6 @@ $(document).ready(function () {
   // Pass what was selected and the correct answer and compare them
   // Also, create a global variable score
 
-=======
-  // Display the correct or incorrect answer
-  var displayAnswer = function (num) {
-    $('.answers').text(quiz[num].answers);
-    console.log(quiz[num].answers);
-  }
-
-  var displayMessage = function (num) {
-    $('#answer-feedback').text(correctMessage || incorrectMessage);
-  }
-
-  // Advance to the next question from the correctMessage / incorrectMessage screen
-  var nextQuestion = function (num) {
-    $('.question-name').text(quiz[num++].question);
-    for (quiz[num].question = 0; quiz[num].question <= quiz.length; quiz[num++].question++);
-  }
-  // RENDER PAGE FUNCTION
-/*  var renderPage = function (question, answer) {
-      var quizHTML = question.answer.map(function(answer, correct, index) {
-          var html = "";
-          html += '<div class="answer-feedback">' + '<li data-index="' + index +'">'
-          if (answers.correct) {
-              html += '<span class="correct">' + correctMessage + '</span>'; 
-          } else {
-              html += '<span class="incorrect">' + incorrectMessage + '</span>'; 
-          }
-          html += '</div>' + '</li>';
-          return html;    
-      });
-      element.html(quizHTML);
-  };
-*/
-  // RENDER ANSWERS AS RADIO BUTTON ELEMENTS
-  var renderAnswers = function (answers, question) {
-    var answersHTML = text(quiz[num].answers);
-      var html = "";
-      html += currentQuestion.quiz[num].answers[num].map(function(answers, correct, num) {
-        return (
-          '<li>' + 
-            '<input class="choices" type="radio" name="radios" value=" + num + " required>' + 
-            '<label>' + answers[num] + '</label>' + 
-          '</li>'
-          )
-      })
-      element.html(answers);
-  };
-  
->>>>>>> 61d700b5efbf0f4e907609e9bd20ab1c200d4d88
   // SELECTORS
   // Select what we don't want to see on the welcome page: questions and results
   $('#questions').hide();
@@ -225,15 +159,9 @@ $('#start').click(function () {
     $('#welcome').hide();
     $('#reset').hide();
     $('#questions').show();
-<<<<<<< HEAD
     $('.answers').show();
     displayQuestion(currentQuestion);
     displayAnswers(currentQuestion);
-=======
-    $('.answers').show(); // Added
-    displayQuestion(currentQuestion);
-    displayAnswer(currentQuestion);
->>>>>>> 61d700b5efbf0f4e907609e9bd20ab1c200d4d88
 })
 
 // On the submit button, when there is a click, run this function.
@@ -258,11 +186,6 @@ $('#submit').click(function (e) {
     $('#quizquestion').hide();
     $('#next').show();
     $('#answer-feedback').show();
-<<<<<<< HEAD
-=======
-    displayMessage(checkAnswer);
-
->>>>>>> 61d700b5efbf0f4e907609e9bd20ab1c200d4d88
 })
 
 // Next question.
@@ -271,7 +194,6 @@ $('#next').click(function (e) {
     e.preventDefault();
     $('#answer-feedback').hide();
     $('#questions').show();
-<<<<<<< HEAD
     $('#quizquestion').show();
     $('#next').hide();
     currentQuestion++; 
@@ -282,9 +204,6 @@ $('#next').click(function (e) {
       displayQuestion(currentQuestion);
       displayAnswers(currentQuestion);
     }
-=======
-    nextQuestion(num); // Added
->>>>>>> 61d700b5efbf0f4e907609e9bd20ab1c200d4d88
 })
 
 // On the "restart quiz" button, go back to the first question. 
@@ -295,5 +214,4 @@ $('#reset').click(function () {
     $('#questions').hide();
     console.log($('#reset'));
 })
-   
 });
