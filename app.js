@@ -73,11 +73,12 @@ $(document).ready(function () {
       "Incorrect",
       "Nope" 
     ]
-
+  
+  // Check the answer the user selects, and compare it to the correct answer.
   // Check whether submitted answer is correct
   // Below, currentQuestion and "correct" are numbers.
-  function checkAnswer (userAnswer, currentQuestion) {
-     if ( userAnswer == quiz[currentQuestion].correct[num] ) {
+/*  function checkAnswer (currentAnswer, currentQuestion) {
+     if ( currentAnswer == currentQuestion.correct ) {
         // Show correctMessage
         // Fix rest of this later. --> switched document.write to return
         return $('#answer-feedback').text(correctMessage[num]);
@@ -86,14 +87,27 @@ $(document).ready(function () {
         return $('#answer-feedback').text(incorrectMessage[num]);
      }
 }
+*/
 
   // Total number of questions -- it's an array, so do quiz.length
   var totalQuestions = quiz.length;
 
+  // Counter
+  var counter = 0;
+  function increment(){
+  score++;
+  return score;
+}
+
+  // User score
+  var score = 0;
+
+  var totalScore = score / totalQuestions;
+
   // Make sure only one question displays at a time
   // Note: currentQuestion is a number.
   var currentQuestion = 0;
-  
+
   // Display the first question
   var displayQuestion = function (num) {
     $('.question-name').text(quiz[num].question);
@@ -104,7 +118,7 @@ $(document).ready(function () {
   }
 
   // Advance to the next question from the correctMessage / incorrectMessage screen
-  var nextQuestion = function (num) {
+  var nextQuestion = function (currentQuestion) {
     $('.question-name').text(quiz[num++].question);
     for (quiz[num].question = 0; quiz[num].question <= quiz.length; quiz[num++].question++);
   }
@@ -173,12 +187,23 @@ $('#submit').click(function (e) {
     e.preventDefault();
     // Below, the pseudo selected is checked
     var selected = $('input[name=radios]:checked').val();
+    if ($('input[name=radios]:checked') == [currentQuestion].correct) {
+    return correctMessage;
+    score++;
+    totalScore;
+    } 
+    else {
+    score;
+    console.log($('input[name=radios]:checked'));
+    console.log($('input[name="radios"]:checked').val());
+    }
+
     console.log(selected);
     $('#questions').hide();
     $('#quizquestion').hide();
+    $('#next').show();
     $('#answer-feedback').show();
-    $('#next').show(); // Why is this not showing?
-    displayMessage(checkAnswer);
+    displayMessage(score);
 
 })
 
