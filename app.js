@@ -41,13 +41,13 @@ $(document).ready(function () {
     // 7th question
     {
       question: "Hugh Laurie, the star of the TV show House, plays which instrument in his band?",
-      answers: ["Saxophonist", "Clarinetist", "Cellist", "Pianist"],
+      answers: ["Saxophone", "Clarinet", "Cello", "Piano"],
       correct: 3
     },
     // 8th question
     {
-      question: "Bon Jovi\'s “Livin\' on a Prayer” is known for using this audio effect: ",
-      answers: ["Telephone", "Autotune", "Talkbox", "Reverb reverb"],
+      question: "Bon Jovi\'s Livin\' on a Prayer is known for using this audio effect: ",
+      answers: ["Telephone", "Autotune", "Talkbox", "Reverb"],
       correct: 2
     },
     // 9th question
@@ -93,22 +93,29 @@ $(document).ready(function () {
   // Note: currentQuestion is a number.
   var currentQuestion = 0;
 
+  // Last question
+  var lastQuestion = quiz[quiz.length];
+
   // Display the first question
   var displayQuestion = function (num) {
     $('.question-name').text(quiz[num].question);
   }
   
+  // Display score
   var displayMessage = function (message) {
     $('#answer-feedback').text(message);
   }
 
+  // Display totalScore
+  var displayScoreMessage = function (message) {
+    $('.score').text(message);
+  }
   // Pick a phrase on the correctMessage or incorrectMessage from the arrays
   // 
   function getRandomInt() {
     return Math.floor(Math.random() * 2)
 }
  
-
   // Advance to the next question from the correctMessage / incorrectMessage screen
   var nextQuestion = function (currentQuestion) {
     $('.question-name').text(quiz[num++].question);
@@ -198,7 +205,13 @@ $('#next').click(function (e) {
     $('#next').hide();
     currentQuestion++; 
     if (currentQuestion == quiz.length) {
-      // Show Results --> make callt o fucntion
+      // Show Results 
+      $('#questions').hide();
+      $('#quizquestion').hide();
+      $('#results').show();
+      $('.score').show();
+      $('#reset').show();
+      displayScoreMessage(totalScore); // A score is displaying, but it is incorrect. 
     }
     else {
       displayQuestion(currentQuestion);
