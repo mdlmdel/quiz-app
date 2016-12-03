@@ -79,15 +79,9 @@ $(document).ready(function () {
 
   // Counter
   var counter = 0;
-  function increment(){
-  score++;
-  return score;
-}
 
   // User score
   var score = 0;
-
-  var totalScore = score / totalQuestions;
 
   // Make sure only one question displays at a time
   // Note: currentQuestion is a number.
@@ -114,7 +108,7 @@ $(document).ready(function () {
   // 
   function getRandomInt() {
     return Math.floor(Math.random() * 2)
-}
+  }
  
   // Advance to the next question from the correctMessage / incorrectMessage screen
   var nextQuestion = function (currentQuestion) {
@@ -125,22 +119,22 @@ $(document).ready(function () {
   // RENDER ANSWERS AS RADIO BUTTON ELEMENTS
   // Which question am I on? Look at the numbered question handed to us.
   var displayAnswers = function (num) {
-      var html = "";
-      // Display the answers for this same question reference above.
-      // We're trying to run a function against every element of the answers array.
-      // Index and map go together
-      html += quiz[num].answers.map(function(answer, index) {
-        return (
-          '<li>' + 
-            '<input class="choices" type="radio" name="radios" value="' + 
-              index + '" required>' + 
-            '<label>' + answer + '</label>' + 
-          '</li>'
-          )
-      })
-      // Set the html to the variable declared on line 131 (html)
-      console.log(html);
-      $('.answers').html(html);
+    var html = "";
+    // Display the answers for this same question reference above.
+    // We're trying to run a function against every element of the answers array.
+    // Index and map go together
+    html += quiz[num].answers.map(function(answer, index) {
+      return (
+        '<li>' + 
+          '<input class="choices" type="radio" name="radios" value="' + 
+            index + '" required>' + 
+          '<label>' + answer + '</label>' + 
+        '</li>'
+        )
+    })
+    // Set the html to the variable declared on line 131 (html)
+    console.log(html);
+    $('.answers').html(html);
   };
 
 // Remove commas from displayAnswers --> Added
@@ -162,17 +156,18 @@ $(document).ready(function () {
 // EVENT LISTENERS
 // Submit button event listener
 // On the start button, when there is a click, run this function.
-$('#start').click(function () {
+  $('#start').click(function () {
     $('#welcome').hide();
     $('#reset').hide();
     $('#questions').show();
+    $('#quizquestion').show();
     $('.answers').show();
     displayQuestion(currentQuestion);
     displayAnswers(currentQuestion);
-})
+  });
 
 // On the submit button, when there is a click, run this function.
-$('#submit').click(function (e) {
+  $('#submit').click(function (e) {
   // Without preventDefault, it refreshes the page. 
     e.preventDefault();
     // Below, the pseudo selected is checked
@@ -193,11 +188,11 @@ $('#submit').click(function (e) {
     $('#quizquestion').hide();
     $('#next').show();
     $('#answer-feedback').show();
-})
+  });
 
 // Next question.
-$('#next').click(function (e) {
-  // Without preventDefault, it refreshes the page. 
+  $('#next').click(function (e) {
+    // Without preventDefault, it refreshes the page. 
     e.preventDefault();
     $('#answer-feedback').hide();
     $('#questions').show();
@@ -211,23 +206,24 @@ $('#next').click(function (e) {
       $('#results').show();
       $('.score').show();
       $('#reset').show();
-      displayScoreMessage(totalScore); // A score is displaying, but it is incorrect. 
+      $('#final-score').text('You got ' + score + ' questions correct.'); // A score is displaying, but it is incorrect. 
     }
     else {
       displayQuestion(currentQuestion);
       displayAnswers(currentQuestion);
     }
-})
+  });
 
 // On the "restart quiz" button, go back to the first question. 
-$('#reset').click(function () {
+  $('#reset').click(function () {
     $('#welcome').show();
     $('#next').hide();
     $('#reset').hide();
     $('#questions').hide();
+    $('#results').hide();
     counter = 0;
     currentQuestion = 0;
     score = 0;
     console.log($('#reset'));
-})
+  })
 });

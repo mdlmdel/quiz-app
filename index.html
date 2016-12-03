@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Music Trivia Quiz</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
-  <link rel="stylesheet" href="main.css">
-</head>
-<body class="container">
-  <h1>Music Trivia Quiz</h1>
-  <!-- Welcome screen --> 
-  <div id="welcome">
-    <h2>Are you ready? Sweet dreams are made of this....</h2>
-    <p>The place to test your knowledge of pop music.</p>
-    <button id="start">Start now!</button>
-  </div>
-  <!-- Questions screen -->
-  <div id="quizquestion">
-    <h4><span class="question-name"></span></h4>
-  <!-- Current question with answer choices and submit button. -->
-    <form id="questions">
-        <ul class="answers">
-          
-        </ul>
-        <button type="submit" id="submit">Submit</button>
-    </form>
-      
-  </div>
-  <div id="answer-feedback">
-     
-  </div>
-  <button type="button" id="next">Next </button>
-  <!-- Score on quiz. -->
-  <div id="results">
-    <p class="score"></p>
-    <button type="reset" id="reset">Restart quiz</button>
-  </div>
-</body>
+  <head>
+    <title>Music Trivia Quiz</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body class="container">
+    <h1>Music Trivia Quiz</h1>
+    <!-- Welcome screen --> 
+    <div id="welcome">
+      <h2>Are you ready? Sweet dreams are made of this....</h2>
+      <p>The place to test your knowledge of pop music.</p>
+      <button id="start">Start now!</button>
+    </div>
+    <!-- Questions screen -->
+    <div id="quizquestion">
+      <h4><span class="question-name"></span></h4>
+    <!-- Current question with answer choices and submit button. -->
+      <form id="questions">
+          <ul class="answers">
+            
+          </ul>
+          <button type="submit" id="submit">Submit</button>
+      </form>
+        
+    </div>
+    <div id="answer-feedback">
+       
+    </div>
+    <button type="button" id="next">Next </button>
+    <!-- Score on quiz. -->
+    <div id="results">
+      <p id="final-score"></p>
+      <button type="button" id="reset">Restart quiz</button>
+    </div>
+  </body>
 </html>
