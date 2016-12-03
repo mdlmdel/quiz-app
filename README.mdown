@@ -1,0 +1,7 @@
+# Music Trivia Quiz App
+
+This is an interactive quiz app I designed and built using JavaScript, jQuery, HTML, and CSS. 
+
+The quiz includes work with objects, responsive feedback for each of the user's answer choices, the overall quiz score, and the ability to restart the quiz. 
+
+-MdL
