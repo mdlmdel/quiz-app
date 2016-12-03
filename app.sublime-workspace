@@ -1,0 +1,706 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "HTML",
+		"selected_items":
+		[
+			[
+				"HTML",
+				"Set Syntax: HTML"
+			],
+			[
+				"Plain Te",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"Plain Text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"JavaScript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pLAIN",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package",
+				"Package Control: List Packages"
+			],
+			[
+				"XML",
+				"Set Syntax: XML"
+			],
+			[
+				"Javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"JavaSc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"Plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"JAvascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"CSS",
+				"Set Syntax: CSS"
+			],
+			[
+				"Javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Intende",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"",
+				"BracketHighlighter: Select Bracket Content with Brackets"
+			],
+			[
+				"packages",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Indentation",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"snipp",
+				"Snippet: Main.sublime-menu"
+			],
+			[
+				"package c",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"package control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control",
+				"Package Control: Install Package"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"high",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"style",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"color",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"Hig",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"Menu",
+				"View: Toggle Menu"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/2x2x2_Series2007_Making-Every-Meeting-Matter-Ebook-plus-Tools - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4014_Management-Skills - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/2x2x2_Series2005_Guides + Tools - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/2x2x2_Series2006_Guides + Tools - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_1x3_Hero-Feature-List_6002_Branded-Lines - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Must-Reads_7001 - 20160907 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/ecomm_mustreads.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Promo_Back-to-Business_8004_Hero - Fall 2016 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Must-Reads_7003 - 20161201 - 03706 - Text",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Must-Reads_7003 - 20161201 - 03711 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4012_Productivity - 03711- Text",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/2x2x2_Series2007_Guides + Tools - Product Development Test - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Must-Reads_7003 - 20161201 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/2x2_Series2002_HBR Tools with Promo - Version with yellow tool images - FINAL- HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_9002_Guides-Series - HTML.html",
+		"/C/Users/maria.deleon/Box Sync/Maria de Leon/Research&Surveys/ResearchSurvey_Template_Archive/Advisory Council Survey - 20161108 - Coremetrics tagging update - Preheader - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Must-Reads_7003 - 20161201 - inlined - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4012_Productivity - Final - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Must-Reads_7002 - 20161201 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Must-Reads_7002 - 20161201 - inlined - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4013_Strategy-Retrospective - inliner - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4013_Strategy-Retrospective - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/2x2_Series2006_HBR Tools without Promo - Mixed Products - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/3x3x3_Series1002_Top-selling-Ebooks - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - emails/Cyber Monday Extended/Cyber Monday 2016 - 03714 - EXTENDED - Text",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - emails/Cyber Monday Extended/Cyber Monday 2016 - 03714 - EXTENDED - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - emails/Cyber Monday Extended/Cyber Monday 2016 - 03715 - EXTENDED - Text",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - emails/Cyber Monday Extended/Cyber Monday 2016 - 03715 - EXTENDED - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - emails/Cyber Monday Extended/Cyber Monday 2016 - 03717 - EXTENDED - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - emails/Cyber Monday Extended/Cyber Monday 2016 - 03717 - EXTENDED - Text",
+		"/C/Users/maria.deleon/Desktop/projects/quiz-app/app.js",
+		"/C/Users/maria.deleon/Desktop/projects/quiz-app/main.css",
+		"/C/Users/maria.deleon/Desktop/projects/quiz-app/index.html",
+		"/C/Users/maria.deleon/Desktop/projects/signup-page/styles/main.css",
+		"/C/Users/maria.deleon/Desktop/projects/signup-page/index.html",
+		"/C/Users/maria.deleon/Desktop/projects/shopping-list/index.html",
+		"/C/Users/maria.deleon/Desktop/projects/shopping-list/app.js",
+		"/C/Users/maria.deleon/Desktop/projects/css_layout_exercises_starter_files/position-exercise.html",
+		"/C/Users/maria.deleon/Desktop/projects/css_layout_exercises_starter_files/styles/display-page.css",
+		"/C/Users/maria.deleon/Desktop/projects/css_layout_exercises_starter_files/float-exercise.html",
+		"/C/Users/maria.deleon/Desktop/projects/css_layout_exercises_starter_files/display-exercise.html",
+		"/C/Users/maria.deleon/Desktop/projects/gregs-list/styles/gregs-list.css",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - inlined  - FINAL - EXTENDED - HTML.html",
+		"/C/Users/maria.deleon/Desktop/projects/shopping-list/main.css",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - emails/Cyber Monday 2016 - 03717 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - emails/Cyber Monday 2016 - 03717 - Text",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4012_Productivity - 03711 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - 112316 - Final, left aligned - SAME IMAGES - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - inlined  - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4012_Productivity - inlined - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - 112316 - Final, indented v2 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - inlined  - FINAL - ORIGINAL - reduced space below titles - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - 112216 - WORKING TEST - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - 112316 - Final, indented - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - 112316 - Final, left aligned- HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - 112216 - piecemeal fix - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - 112216 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 TESTING - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Series_Topic_4004_Performance-Management - 03702 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Series_Topic_4004_Performance-Management - 03703 - Text",
+		"/C/Users/maria.deleon/Desktop/Series_Topic_4004_Performance-Management - 03703 - HTML.html",
+		"/C/Users/maria.deleon/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/maria.deleon/AppData/Roaming/Sublime Text 3/Packages/BracketHighlighter/bh_core.sublime-settings",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4012_Productivity - v1 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4012_Productivity - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Promo_Back-to-Business_8005_Hero - Fall 2016 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/Preference Center/Preference Center - 20161122 - Subscribed - Form.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/Preference Center/Preference Center - 20161121 - Subscribed - Form.html",
+		"/C/Users/maria.deleon/Desktop/Series_Topic_4004_Performance-Management - 03704 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Series_Topic_4004_Performance-Management - 03704 - Text",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/Preference Center/Preference Center - 20161121 - New Form.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/Preference Center/Preference Center - 20161122 - New Form.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/Preference Center/Preference Center - 20161122 - Lookup.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/3x3x3_1006_new-from-hbr-and-pre-orders - 03711 - Text",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/3x3x3_1006_new-from-hbr-and-pre-orders - 03711 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Optimizely - 10 Must Reads landing page - update 11-22-16 - FINAL - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/3x3x3_1006_new-from-hbr-and-pre-orders - Final - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Optimizely - 10 Must Reads landing page - update 11-21-16 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - inlined - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Optimizely - 10 Must Reads landing page - update 11-21-16 - mbs edits - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4012_Productivity - inliner - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/3x3x3_1006_new-from-hbr-and-pre-orders - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/3x3x3_Series1004_20MM-promo - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Promo_Back-to-Business_8003 - Fall 2016 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/projects/email-line-grid/index.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - Github - HTML.html",
+		"/C/Users/maria.deleon/Downloads/app.js",
+		"/C/Users/maria.deleon/Desktop/Qualtrics mod - mobile - EXTENDED - updated 111816 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4011_Teams - 03711 - Text",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4011_Teams - 03711 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4011_Teams - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Qualtrics mod - desktop - EXTENDED - updated - 111816 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - v2 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4011_Teams - inlined - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Qualtrics mod - mobile - EXTENDED - original 111816 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4010_Take-Charge-of-Your-Career - inlined - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - vertical line test - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Qualtrics mod - mobile - original - updated - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Qualtrics mod - mobile - original with new logo - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_Topic_4011_Teams - Final - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Cyber Monday 2016 - text next to images in one column - HTML.html",
+		"/C/Users/maria.deleon/Desktop/CyberMonday-40percentoff_preheader-test-HTML.html",
+		"/C/Users/maria.deleon/Desktop/Optimizely - 10 Must Reads landing page - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_9002_Guides-Series - 03711 - HTML.html",
+		"/C/Users/maria.deleon/Box Sync/Maria de Leon/Ecomm&Web-Marketing/Silverpop-related/Silverpop_Templates/Ecommerce/Series/Guides/10020E/10020E - 081116 - RTB - FUP - Ref03621 - NEW utm Tagging - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/HBR Ascend/HBR-Ascend-Launch - 20161110 - inlined - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Qualtrics mod - mobile - original extended - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/HBR Ascend/HBR-Ascend-Launch - 20161110 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Qualtrics mod - mobile - updated - HTML.html",
+		"/C/Users/maria.deleon/Desktop/intercept - desktop - 40 percent off 50 or more.html",
+		"/C/Users/maria.deleon/Desktop/Qualtrics mod - mobile - original - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/HBR Ascend/HBR-Ascend-Launch - 20161110 - v1 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/HBR Ascend/HBR-Ascend-Launch - 20161110 - Text",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_9002_Guides-Series - 03711 - Text",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_9002_Guides-Series - 03706 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_9002_Guides-Series - 03707 - Text",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_9002_Guides-Series - v2 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_9002_Guides-Series - inlined - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/2x2x2_Series2004_Guides + Tools - Guide to Getting Right Work Done - 03703 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/2x2x2_Series2004_Guides + Tools - Guide to Getting Right Work Done - 03703 - Text",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Series_1x3_Hero-Feature-List_6001 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/2x2x2_Series2004_Guides + Tools - Guide to Getting Right Work Done - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/3x3x3_Series1005_20MM-promo - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/2x2x2_Series2004_Guides + Tools - Guide to Getting Right Work Done - 03695 - HTML.html",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/2x2x2_Series2004_Guides + Tools - Guide to Getting Right Work Done - 03695 - Text",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Press Catalog - 2016 Redesign/Press Catalog - 2016 Redesign - Text",
+		"/C/Users/maria.deleon/Desktop/Miscellaneous/HTML E-mail Resources/zurb_072916-Alchemy-Worx/Press Catalog - 2016 Redesign/Press Catalog - 2016 Redesign - HTML.html"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 120.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ce4b02",
+			"fe5502",
+			"help",
+			"12546E",
+			"https://hbr.org/product/hbr-s-10-must-reads-on-emotional-intelligence-with-featured-article-what-makes-a-leader-by-daniel-goleman/15036E-KND-ENG",
+			"leadership",
+			"people",
+			"https://hbr.org/resources/images/marketing/email/12601E_150x226.jpg",
+			"strateg",
+			"src",
+			"https://hbr.org/product/hbr-s-10-must-reads-on-strategy-including-featured-article-what-is-strategy-by-michael-e-porter/12601E-KND-ENG",
+			"https://hbr.org/resources/images/marketing/email/10020E_280x227.jpg",
+			"src",
+			"https://hbr.org/store",
+			"back to business",
+			"https://hbr.org/resources/images/marketing/email/generic-HMM-single-module_140x210.jpg",
+			"Meeting Management: Harvard ManageMentor Online Module",
+			"https://hbr.org/product/meeting-management-harvard-managementor-online-module/6789AB-HTM-ENG",
+			"03711",
+			"03710",
+			"03709",
+			"12mobuyers",
+			"03708",
+			"03707",
+			"03706",
+			"?referral=03711&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4011_Teams_20161118",
+			"03706",
+			"?referral=03711&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_2012_Productivity_20161125",
+			"hbrmustreads",
+			"https://hbr.org/product/teams-at-work-make-time-for-the-work-that-matters-with-powerpoint/TWMTW1-ZIP-ENG",
+			"?referral=03706&&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_9002_Guides_Series_20161116",
+			"referral=03706&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4011_Teams_20161118",
+			"?referral=03706&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4011_Teams_20161118",
+			"TWEMO1_150x194.jpg",
+			"https://hbr.org/product/teams-at-work-emotional-intelligence-with-facilitator-s-guide/TWEMO1-ZIP-ENG",
+			"lead your team",
+			"Teams at Work: Make Time for the Work that Matters",
+			"TWMTW1_150x194.jpg",
+			"https://hbr.org/product/teams-at-work-make-time-for-the-work-that-matters-with-powerpoint/TWMTW1-ZIP-ENG",
+			"TWFBK1_150x194.jpg",
+			"https://hbr.org/product/teams-at-work-giving-difficult-feedback-with-facilitator-s-guide/TWFBK1-ZIP-ENG",
+			"https://hbr.org/product/hbr-guide-to-leading-teams-ebook-tools/10022E-KND-ENG",
+			"src",
+			"pre-h",
+			"pre-ehad",
+			"header",
+			"color",
+			"header",
+			"line starts",
+			"?utm_medium=email&amp;utm_source=ecom_12mobuyers&amp;utm_campaign=hbrmustreads&amp;referral=03706",
+			"line starts",
+			"?utm_medium=email&amp;utm_source=ecom_12mobuyers&amp;utm_campaign=hbrmustreads&amp;referral=03706",
+			"buy now",
+			"referral=03706&utm_source=product_promo& utm_medium=email& utm_campaign=promo_Series_Must-Reads_7002_20161201",
+			"?referral=03706& utm_source=product_promo& utm_medium=email& utm_campaign=promo_Series_Must-Reads_7001_20160907",
+			"?referral=03706&cm_mmc=email-_-rtb-_-Series_Must-Reads_7001-_-Series_Must-Reads_7001_20160907_rtb& utm_source=product_promo& utm_medium=email& utm_campaign=promo_Series_Must-Reads_7001_20160907",
+			"03678",
+			"https://hbr.org/product/hbr-s-10-must-reads-on-emotional-intelligence-with-featured-article-what-makes-a-leader-by-daniel-goleman/15036E-KND-ENG",
+			"src",
+			"must-reads-",
+			"referral=03706&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4013_Strategy-Retrospectives_20161202",
+			"referral=03664&cm_mmc=email-_-rtb-_-Series_Topic_4013_Strategy-Retrospectives-_-Series_Topic_4013_Strategy-Retrospectives_20161202_rtb&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4013_Strategy-Retrospectives_20161202",
+			"referr",
+			"?referral=03706&utm_source=product_promo&utm_medium=email&utm_campaign=promo_2x2x2_Series2006_20161114",
+			"referr",
+			"?referral=03706&amp;utm_source=product_promo&amp;utm_medium=email&amp;utm_campaign=promo_2x2x2_Series2006_20161114",
+			"referral=03664&amp;cm_mmc=email-_-rtb-_-Series_Topic_4001_Strategy-_-Series_Topic_4001_Strategy_20161130_rtb&amp;utm_source=product_promo&amp;utm_medium=email&amp;utm_campaign=promo_Series_Topic_4001_Strategy_20161130",
+			"https://hbr.org/search?search_type=search-all&amp;term=strategy&amp;",
+			"h1",
+			"line starts",
+			"?referral=03706&amp;utm_source=product_promo&amp;utm_medium=email&amp;utm_campaign=promo_Series_Topic_4001_Strategy_20161130",
+			"20161130",
+			"Series_Topic_4001_Strategy",
+			"products/10020E_500.png",
+			"src",
+			"20160826",
+			"?referral=03664&cm_mmc=email-_-rtb-_-Series_Topic_4001_Strategy-_-Series_Topic_4001_Strategy_20160826_rtb&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4001_Strategy_20160826",
+			"https://hbr.org/product/playing-to-win-strategy-toolkit/PTWTL1-KND-ENG",
+			"https://hbr.org/resources/images/products/PTWTL1_500.png",
+			"implement",
+			"https://hbr.org/resources/images/products/PTWTL1_500.png",
+			"https://hbr.org/resources/images/marketing/email/10045E_280x201.jpg",
+			"?referral=03694&cm_mmc=email-_-rtb-_-3x3x3_Series1002_top-selling-ebooks-_-3x3x3_Series1002_top-selling-ebooks_20161010_rtb&utm_source=product_promo&utm_medium=email&utm_campaign=promo_3x3x3_Series1002_top-selling-ebooks_20161010",
+			"https://hbr.org/product/successful-writing-and-speaking-the-communication-collection-9-books/10045E-KND-ENG",
+			"to achieve",
+			"buy now",
+			"https://hbr.org/product/the-analytical-marketer-how-to-transform-your-marketing-organization/14251E-KND-ENG?referral=03678&cm_mmc=email-_-rtb-_-Series_Back-to-Business_8004-_-Series_Back-to-Business_8004_20160926_rtb&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Back-to-Business_8004_20160926",
+			"review",
+			"tools to",
+			"performance",
+			"support",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=cybermonday_extended_2016&referral=03714",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=cybermonday_extended_2016&referral=03715",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=cybermonday_extended_2016&referral=03717",
+			"?utm_medium=email&utm_source=ecom_nlsubs&utm_campaign=cybermonday_extended_2016&referral=03716",
+			"?utm_medium=email&utm_source=ecom_balance&utm_campaign=cybermonday_extended_2016&referral=03718",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=cybermonday_extended_2016&referral=03718",
+			"03715",
+			"03714",
+			"03713",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=cybermonday2016&referral=03715",
+			"next",
+			"  \n",
+			"displaym",
+			"display",
+			"displaym",
+			"displaymess",
+			"correct",
+			".correct",
+			"currentquestion.corr",
+			"score",
+			"correct",
+			"answer",
+			"displayanswer",
+			"currentanswer",
+			"current",
+			"currentqu",
+			"currentquestion",
+			"num",
+			"currentquestion",
+			"userScore",
+			"check",
+			"checkanswer",
+			"currentquest",
+			"userAnswer",
+			"consol",
+			"next",
+			"question-"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"f54e09",
+			"ff9838",
+			"12572E",
+			"https://hbr.org/product/hbr-s-10-must-reads-on-managing-yourself-with-bonus-article-how-will-you-measure-your-life-by-clayton-m-christensen/an/12572E-KND-ENG",
+			"https://hbr.org/resources/images/marketing/email/emotionalintelligence.jpg",
+			"https://hbr.org/product/hbr-s-10-must-reads-on-emotional-intelligence-with-featured-article-what-makes-a-leader-by-daniel-goleman/15036E-KND-ENG",
+			"https://hbr.org/resources/images/products/10004H_500.png",
+			"https://hbr.org/store/landing/promo",
+			"https://hbr.org/resources/images/marketing/email/11364E_150x225.jpg",
+			"HBR's 10 Must Reads on Communication",
+			"https://hbr.org/product/hbr-s-10-must-reads-on-communication-with-featured-article-the-necessary-art-of-persuasion-by-jay-a-conger/an/11364E-KND-ENG",
+			"03706",
+			"03711",
+			"03710",
+			"13plusmobuyers",
+			"03709",
+			"03708",
+			"03707",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=hbrmustreads&referral=03706",
+			"03707",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=hbrmustreads&referral=03706",
+			"making-every-meeting-matter",
+			"https://hbr.org/product/hbr-tools-better-meetings/TLBMS1-ZIP-ENG",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=hbrmustreads&referral=03706",
+			"utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=hbrmustreads&referral=03706",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=hbrmustreads&referral=03706",
+			"generic-HMM-single-module_150x225.jpg",
+			"https://hbr.org/product/meeting-management-harvard-managementor-online-module/6789AB-HTM-ENG",
+			"Running Meetings (20-Minute Manager)",
+			"17003E_150x210.jpg",
+			"https://hbr.org/product/running-meetings-hbr-20-minute-manager-series/17003E-KND-ENG",
+			"10011E_150x208.jpg",
+			"https://hbr.org/product/running-virtual-meetings-hbr-20-minute-manager-series/10011E-KND-ENG",
+			"https://hbr.org/product/hbr-guide-to-making-every-meeting-matter-ebook-tools/10139E-KND-ENG",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=hbrmustreads&referral=03706",
+			"utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=hbrmustreads&referral=03706",
+			"?referral=03706&utm_source=product_promo& utm_medium=email& utm_campaign=promo_Series_Must-Reads_7002_20161201",
+			"?referral=03706& utm_source=product_promo& utm_medium=email& utm_campaign=promo_Series_Must-Reads_7001_20160907",
+			"03706",
+			"https://hbr.org/product/hbr-s-10-must-reads-big-business-ideas-collection-2015-2017-plus-the-essentials-4-books/10132E-KND-ENG",
+			"referral=03706&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4013_Strategy-Retrospectives_20161202",
+			"?referral=03706&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4013_Strategy-Retrospectives_20161202",
+			"referral=03706&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4013_Strategy-Retrospectives_20161202",
+			"https://hbr.org/search?N=0+4294967059&Ntt=strategy&",
+			"?referral=03706&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4013_Strategy-Retrospectives_20161202",
+			"20161202",
+			"Series_Topic_4013_Strategy-Retrospectives",
+			"marketing/email/10020E_280x227.jpg",
+			"20161130",
+			"?referral=03706&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4001_Strategy_20160826",
+			"https://hbr.org/product/hbr-guide-to-building-your-business-case-ebook-tools/10020E-KND-ENG",
+			"https://hbr.org/resources/images/products/10020E_500.png",
+			"https://hbr.org/resources/images/marketing/email/10020E_280x242.png",
+			"https://hbr.org/resources/images/products/0007BE_500.png",
+			"?referral=03664&cm_mmc=email-_-rtb-_-Series_Topic_4001_Strategy-_-Series_Topic_4001_Strategy_20160826_rtb&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4001_Strategy_20160826",
+			"https://hbr.org/product/the-heart-of-strategy-ebook-collection/0007BE-BUN-ENG",
+			"https://hbr.org/product/hbr-s-10-must-reads-on-strategy-including-featured-article-what-is-strategy-by-michael-e-porter/12601E-KND-ENG?referral=03664&cm_mmc=email-_-rtb-_-Series_Topic_4001_Strategy-_-Series_Topic_4001_Strategy_20160826_rtb&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4001_Strategy_20160826",
+			"?utm_medium=email&utm_source=ecom_13mobuyers&utm_campaign=cybermonday_extended_2016&referral=03714",
+			"?utm_medium=email&utm_source=ecom_activesubs&utm_campaign=cybermonday_extended_2016&referral=03715",
+			"?utm_medium=email&utm_source=ecom_regs&utm_campaign=cybermonday_extended_2016&referral=03717",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=cybermonday_extended_2016&referral=03717",
+			"?utm_medium=email&utm_source=ecom_nlsubs&utm_campaign=cybermonday_extended_2016&referral=03716",
+			"?utm_medium=email&utm_source=ecom_balance&utm_campaign=cybermonday_extended_2016&referral=03718",
+			"03718",
+			"03715",
+			"03714",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=cybermonday_extended_2016&referral=03713",
+			"score",
+			"03717",
+			"03716",
+			"03718",
+			"03715",
+			"03714",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=cybermonday2016&referral=03713",
+			"03711",
+			"03710",
+			"03709",
+			"03708",
+			"03707",
+			"referral=03706&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_2012_Productivity_20161125",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=cybermonday_extended_2016&referral=03713",
+			"cybermonday_orange_plum_extended.png",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=cybermonday2016&referral=03713",
+			"15001E_124x194.jpg",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=cybermonday2016&referral=03713",
+			"15001E_134x208.jpg",
+			"\"small-12 large-12 columns first last\"",
+			"?utm_medium=email&utm_source=ecom_12mobuyers&utm_campaign=cybermonday2016&referral=03713",
+			"?referral=03706&utm_medium=email&utm_campaign=promo_Cyber-Monday-2016_20161128",
+			"10948_150x215_center-aligned.jpg",
+			"10948_150x215_aligned-top.jpg",
+			"15002_150x215_aligned-top.jpg",
+			"15002_150x215_centered-vertically.jpg",
+			"10948_150x215_center-aligned.jpg",
+			"15001E_134x215.jpg",
+			"15001E_150x215_left-aligned.jpg",
+			"https://hbr.org/store/landing/promo?referral=03706&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_2012_Productivity_20161125",
+			"https://hbr.org/resources/images/marketing/email/10078E_150x215.jpg",
+			"https://hbr.org/resources/images/marketing/email/15002_150x215.jpg",
+			"https://hbr.org/resources/images/marketing/email/15001E_150x215.jpg",
+			"https://hbr.org/resources/images/marketing/email/10948_150x215.jpg",
+			"A new collection from HBR&rsquo;s bestselling authors.",
+			"Get up to speed fast on essential business skills.",
+			"How-to essentials from leading experts.",
+			"The most important ideas on management, all in one place.",
+			"https://hbr.org/resources/images/marketing/email/10004H_150x222.jpg",
+			"03703",
+			"20161123",
+			"03702",
+			"?referral=03706&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_2012_Productivity_20161125",
+			"TWMTW1_150x210",
+			"0caffc",
+			"03704",
+			"03695",
+			"?referral=03694&utm_medium=email&utm_campaign=promo_Series_Topic_4004_Performance-Management_20161122",
+			"03694",
+			"03711",
+			"03710",
+			"03709",
+			"03708",
+			"03707",
+			"?referral=03706&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4011_Teams_20161121",
+			"https://hbr.org/product/hbr-guide-to-making-every-meeting-matter/10069E-KND-ENG",
+			"10069E_150x225.jpg",
+			"referral=03706&utm_source=product_promo&utm_medium=email&utm_campaign=promo_Series_Topic_4011_Teams_20161121",
+			"referral=03706&utm_medium=email&utm_campaign=promo_Cyber-Monday-2016_20161128",
+			"5 BOOKS - PAPERBACK OR EBOOK",
+			"10 BOOKS - PAPERBACK OR EBOOK"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "app.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"html",
+				"index.html"
+			],
+			[
+				"",
+				"$(document).ready(function() {"
+			],
+			[
+				"10022e",
+				"C:\\Users\\maria.deleon\\Box Sync\\Maria de Leon\\Ecomm&Web-Marketing\\Silverpop-related\\Silverpop_Templates\\Ecommerce\\Series\\Guides\\10020E\\10020E - 080516 - RTB - FUP - Ref03615 - NEW utm Tagging - HTML.html"
+			],
+			[
+				"10020e",
+				"C:\\Users\\maria.deleon\\Box Sync\\Maria de Leon\\Ecomm&Web-Marketing\\Silverpop-related\\Silverpop_Templates\\Ecommerce\\Series\\Guides\\10020E\\10020E - 080516 - RTB - FUP - Ref03615 - NEW utm Tagging - HTML.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 149.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

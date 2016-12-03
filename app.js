@@ -144,12 +144,12 @@ $(document).ready(function () {
   };
 
 // Remove commas from displayAnswers --> Added
-  function removeCommas(displayAnswers) {
+/*  function removeCommas(displayAnswers) {
     while (str.search(",") >= 0) {
         str = (str + "").replace(',', '');
     }
     return str;
-};
+};*/
   // Pass what was selected and the correct answer and compare them
   // Also, create a global variable score
 
@@ -225,6 +225,9 @@ $('#reset').click(function () {
     $('#next').hide();
     $('#reset').hide();
     $('#questions').hide();
+    counter = 0;
+    currentQuestion = 0;
+    score = 0;
     console.log($('#reset'));
 })
 });
