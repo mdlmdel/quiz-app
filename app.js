@@ -105,7 +105,6 @@ $(document).ready(function () {
     $('.score').text(message);
   }
   // Pick a phrase on the correctMessage or incorrectMessage from the arrays
-  // 
   function getRandomInt() {
     return Math.floor(Math.random() * 2)
   }
@@ -121,7 +120,7 @@ $(document).ready(function () {
   var displayAnswers = function (num) {
     var html = "";
     // Display the answers for this same question reference above.
-    // We're trying to run a function against every element of the answers array.
+    // We're running a function against every element of the answers array.
     // Index and map go together
     html += quiz[num].answers.map(function(answer, index) {
       return (
@@ -132,20 +131,9 @@ $(document).ready(function () {
         '</li>'
         )
     })
-    // Set the html to the variable declared on line 131 (html)
     console.log(html);
     $('.answers').html(html);
   };
-
-// Remove commas from displayAnswers --> Added
-/*  function removeCommas(displayAnswers) {
-    while (str.search(",") >= 0) {
-        str = (str + "").replace(',', '');
-    }
-    return str;
-};*/
-  // Pass what was selected and the correct answer and compare them
-  // Also, create a global variable score
 
   // SELECTORS
   // Select what we don't want to see on the welcome page: questions and results
@@ -153,9 +141,9 @@ $(document).ready(function () {
   $('#results').hide();
   $('#answer-feedback').hide();
   $('#next').hide();
-// EVENT LISTENERS
-// Submit button event listener
-// On the start button, when there is a click, run this function.
+  // EVENT LISTENERS
+  // Submit button event listener
+  // On the start button, when there is a click, run this function.
   $('#start').click(function () {
     $('#welcome').hide();
     $('#reset').hide();
@@ -166,7 +154,7 @@ $(document).ready(function () {
     displayAnswers(currentQuestion);
   });
 
-// On the submit button, when there is a click, run this function.
+  // On the submit button, when there is a click, run this function.
   $('#submit').click(function (e) {
   // Without preventDefault, it refreshes the page. 
     e.preventDefault();
@@ -174,14 +162,10 @@ $(document).ready(function () {
     var selected = $('input[name=radios]:checked').val();
     if ($('input[name=radios]:checked').val() == quiz[currentQuestion].correct) {  
       score++;
-      /* Note to remember: (currentQuestion + 1) --> Do + 1 to account for 
-      how math and arrays work; to account for how arrays work, increment as we go. */
-      // The return stops the code from running past that point in the block.
-      // return correctMessage;
+      // Return correctMessage;
       displayMessage(correctMessage[getRandomInt()]);
     } 
     else {
-    // score; --> Don't need this since it isn't doing anything here.
       displayMessage(incorrectMessage[getRandomInt()]);
     }
     $('#questions').hide();
@@ -190,7 +174,7 @@ $(document).ready(function () {
     $('#answer-feedback').show();
   });
 
-// Next question.
+  // Next question.
   $('#next').click(function (e) {
     // Without preventDefault, it refreshes the page. 
     e.preventDefault();
@@ -206,7 +190,7 @@ $(document).ready(function () {
       $('#results').show();
       $('.score').show();
       $('#reset').show();
-      $('#final-score').text('You got ' + score + ' questions correct.'); // A score is displaying, but it is incorrect. 
+      $('#final-score').text('You got ' + score + ' questions correct.');
     }
     else {
       displayQuestion(currentQuestion);
@@ -214,7 +198,7 @@ $(document).ready(function () {
     }
   });
 
-// On the "restart quiz" button, go back to the first question. 
+  // On the "restart quiz" button, go back to the first question. 
   $('#reset').click(function () {
     $('#welcome').show();
     $('#next').hide();
