@@ -58,6 +58,10 @@ button:hover {
   border: 2px solid #076997;
 }
 
+label {
+  margin-left: 10px;
+}
+
 #answers {
   width: 250px;
 }
@@ -66,12 +70,9 @@ button:hover {
   padding-bottom: 20px;
 }
 
-ul {
-  
-}
-
 li {
   display: block;
+  text-indent: -20px;
 }
 
 .score {
