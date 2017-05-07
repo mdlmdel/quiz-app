@@ -108,6 +108,27 @@ $(document).ready(function () {
   function getRandomInt() {
     return Math.floor(Math.random() * 2)
   }
+
+  // After answering the final question, display this message depending on the score. 
+  /*var finalFeedback = [
+    'Yikes, you gotta start listening to more music!', 
+    'You\'re getting there',
+    'Nice!', 
+    'You\'re a rockstar!'
+  ];
+  if (score < 5 ) {  
+    score++;
+    text(finalFeedback[0]);
+  } 
+  else if (score < 7 ) {
+    text(finalFeedback[1]);
+  }
+  else if (score < 9 ) {
+    text(finalFeedback[2]);
+  }
+  else (score < 9 ) {
+    text(finalFeedback[2]);
+  }*/
  
   // Advance to the next question from the correctMessage / incorrectMessage screen
   var nextQuestion = function (currentQuestion) {
