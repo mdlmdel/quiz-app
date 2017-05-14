@@ -52,11 +52,8 @@ $(document).ready(function () {
     },
     
     {
-<<<<<<< HEAD
       question: "The popular Shure SM58 microphone has been shown to work in: ",
-=======
       question: "9. The popular Shure SM58 microphone has been shown to work in: ",
->>>>>>> master
       answers: ["Zero gravity", "Water", "Oil", "Mud"],
       correct: 0
     },
