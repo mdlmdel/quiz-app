@@ -98,7 +98,7 @@ $(document).ready(function () {
   // Display score
   var displayMessage = function (message) {
     $('#answer-feedback').text(message + ' Your score is ' + score + '/' + totalQuestions + '.');
-  }
+}
 
   // Display totalScore
   var displayScoreMessage = function (message) {
@@ -160,6 +160,7 @@ $(document).ready(function () {
   $('#questions').hide();
   $('#results').hide();
   $('#answer-feedback').hide();
+  $('.question-of-total').hide();
   $('#next').hide();
   // EVENT LISTENERS
   // Submit button event listener
@@ -168,6 +169,8 @@ $(document).ready(function () {
     $('#welcome').hide();
     $('#reset').hide();
     $('#questions').show();
+    $('.question-of-total').show();
+    $('.question-of-total').text('(' + (currentQuestion + 1) + ' of 10)');
     $('#quizquestion').show();
     $('.answers').show();
     displayQuestion(currentQuestion);
@@ -191,6 +194,7 @@ $(document).ready(function () {
     $('#questions').hide();
     $('#quizquestion').hide();
     $('#next').show();
+    $('.question-of-total').text('(' + (currentQuestion + 1) + ' of 10)');
     $('#answer-feedback').show();
   });
 
@@ -201,10 +205,13 @@ $(document).ready(function () {
     $('#answer-feedback').hide();
     $('#questions').show();
     $('#quizquestion').show();
+    $('.question-of-total').show();
+    $('.question-of-total').text('(' + (currentQuestion + 2) + ' of 10)');
     $('#next').hide();
     currentQuestion++; 
     if (currentQuestion == quiz.length) {
       // Show Results 
+      $('.question-of-total').text('End of Quiz');
       $('#questions').hide();
       $('#quizquestion').hide();
       $('#results').show();
