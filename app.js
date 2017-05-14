@@ -4,61 +4,62 @@ $(document).ready(function () {
   var quiz = [ 
     
     {
-      question: "What is the stage name of Martin Karl Sandberg?",
+      question: "1. What is the stage name of Martin Karl Sandberg?",
       answers: ["Andy Samberg", "Steve Sandberg", "Max Martin", "Carl Sandburg"],
       correct: 2
     }, 
     
     {
-      question: "Who are the members of The Eurythmics?",
+      question: "2. Who are the members of The Eurythmics?",
       answers: ["Annie Lennox and David A. Stewart", "Sting", "The Weeknd", "Grace Slick, Paul Kantner, Marty Balin, Jack Casady, Spencer Dryden"],
       correct: 0
     },
     
     {
-      question: "Which of the following has a rumored synchronization effect between movie and album?",
+      question: "3. Which of the following has a rumored synchronization effect between movie and album?",
       answers: ["Bon Jovi\'s Slippery When Wet and Titanic", "Pink Floyd\'s Dark Side of the Moon and The Wizard of Oz", "Sia\'s The Greatest and Ali", "AC/DC\'s The Razors Edge and Top Gun" ],
       correct: 1
     },
     
     {
-      question: "The musical Rent is loosely based on which opera?",
+      question: "4. The musical Rent is loosely based on which opera?",
       answers: ["Turandot", "La Traviata", "Rigoletto", "La Boheme"],
       correct: 3
     },
     
     {
-      question: "Who sings Love on the Brain?",
+      question: "5. Who sings Love on the Brain?",
       answers: ["Britney Spears", "Tina Turner", "Whitney Houston", "Rihanna"],
       correct: 3
     },
     
     {
-      question: "Which comedian sang Hallelujah by Leonard Cohen as a skit in response to his death and the presidential election results?",
+      question: "6. Which comedian sang Hallelujah by Leonard Cohen as a skit in response to his death and the presidential election results?",
       answers: ["Kate McKinnon", "Seth Myers", "Jimmy Fallon", "Chelsea Handler"],
       correct: 0
     },
     
     {
-      question: "Hugh Laurie, the star of the TV show House, plays which instrument in his band?",
+      question: "7. Hugh Laurie, the star of the TV show House, plays which instrument in his band?",
       answers: ["Saxophone", "Clarinet", "Cello", "Piano"],
       correct: 3
     },
     
     {
-      question: "Bon Jovi\'s Livin\' on a Prayer is known for using this audio effect: ",
+      question: "8. Bon Jovi\'s Livin\' on a Prayer is known for using this audio effect: ",
       answers: ["Telephone", "Autotune", "Talkbox", "Reverb"],
       correct: 2
     },
     
     {
       question: "The popular Shure SM58 microphone has been shown to work in: ",
+      question: "9. The popular Shure SM58 microphone has been shown to work in: ",
       answers: ["Zero gravity", "Water", "Oil", "Mud"],
       correct: 0
     },
     
     {
-      question: "The well-known U87 vocal mic is produced by: ",
+      question: "10. The well-known U87 vocal mic is produced by: ",
       answers: ["Shure", "Blue", "Neumann", "Sennheiser"],
       correct: 2
     }
@@ -70,8 +71,8 @@ $(document).ready(function () {
     ]
     // Message they receive if their answer is incorrect. 
     var incorrectMessage = [
-      "Incorrect",
-      "Nope" 
+      "Incorrect.",
+      "Nope." 
     ]
   
   // Total number of questions -- it's an array, so do quiz.length
@@ -97,8 +98,8 @@ $(document).ready(function () {
   
   // Display score
   var displayMessage = function (message) {
-    $('#answer-feedback').text(message);
-  }
+    $('#answer-feedback').text(message + ' Your score is ' + score + '/' + totalQuestions + '.');
+}
 
   // Display totalScore
   var displayScoreMessage = function (message) {
@@ -108,6 +109,27 @@ $(document).ready(function () {
   function getRandomInt() {
     return Math.floor(Math.random() * 2)
   }
+
+  // After answering the final question, display this message depending on the score. 
+  /*var finalFeedback = [
+    'Yikes, you gotta start listening to more music!', 
+    'You\'re getting there',
+    'Nice!', 
+    'You\'re a rockstar!'
+  ];
+  if (score < 5 ) {  
+    score++;
+    text(finalFeedback[0]);
+  } 
+  else if (score < 7 ) {
+    text(finalFeedback[1]);
+  }
+  else if (score < 9 ) {
+    text(finalFeedback[2]);
+  }
+  else (score < 9 ) {
+    text(finalFeedback[2]);
+  }*/
  
   // Advance to the next question from the correctMessage / incorrectMessage screen
   var nextQuestion = function (currentQuestion) {
@@ -139,6 +161,7 @@ $(document).ready(function () {
   $('#questions').hide();
   $('#results').hide();
   $('#answer-feedback').hide();
+  $('.question-of-total').hide();
   $('#next').hide();
   // EVENT LISTENERS
   // Submit button event listener
@@ -147,6 +170,8 @@ $(document).ready(function () {
     $('#welcome').hide();
     $('#reset').hide();
     $('#questions').show();
+    $('.question-of-total').show();
+    $('.question-of-total').text('(' + (currentQuestion + 1) + ' of 10)');
     $('#quizquestion').show();
     $('.answers').show();
     displayQuestion(currentQuestion);
@@ -170,6 +195,7 @@ $(document).ready(function () {
     $('#questions').hide();
     $('#quizquestion').hide();
     $('#next').show();
+    $('.question-of-total').text('(' + (currentQuestion + 1) + ' of 10)');
     $('#answer-feedback').show();
   });
 
@@ -180,10 +206,13 @@ $(document).ready(function () {
     $('#answer-feedback').hide();
     $('#questions').show();
     $('#quizquestion').show();
+    $('.question-of-total').show();
+    $('.question-of-total').text('(' + (currentQuestion + 2) + ' of 10)');
     $('#next').hide();
     currentQuestion++; 
     if (currentQuestion == quiz.length) {
       // Show Results 
+      $('.question-of-total').text('End of Quiz');
       $('#questions').hide();
       $('#quizquestion').hide();
       $('#results').show();
